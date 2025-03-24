@@ -28,7 +28,7 @@ while True:
     if nahodne_cislo[0] != '0':
       break
 
-# print(f"nahodne_cislo: {nahodne_cislo} \n{47 * '-'}") # kontrolní tisk
+print(f"nahodne_cislo: {nahodne_cislo} \n{47 * '-'}") # kontrolní tisk
 
 # 3. Zadání čísla s ověřením požadovaného formátu
 """
@@ -131,7 +131,7 @@ while True:
     break
   else:
     bulls_final = spocitej_bulls(nahodne_cislo, tip_final)
-    cows_final = spocitej_cows(nahodne_cislo, tip_final)
+    cows_final = spocitej_cows(nahodne_cislo, tip_final) - bulls_final
     print(f"{bulls_final} bull{'s' if bulls_final != 1 else ''}, " \
           f"{cows_final} cow{'s' if cows_final != 1 else ''}")
     print(47 * '-')
